@@ -19,7 +19,7 @@ h1 {
   padding: 20px;
 }
 
-.materia {sistema de representacion
+.materia {
   padding: 12px;
   border-radius: 10px;
   text-align: center;
