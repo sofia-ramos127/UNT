@@ -1,6 +1,46 @@
-body { font-family: Arial, sans-serif; padding:20px; background:#f5f5f5; }
-h1 { text-align:center; }
-.materia { display:inline-block; padding:8px 12px; margin:5px; border-radius:5px; cursor:pointer; }
-.bloqueada { background:#ccc; color:#666; }
-.disponible { background:#6c5ce7; color:white; }
-.aprobada { background:#00b894; color:white; }
+{
+  cicloId: "c2",
+  cicloNombre: "2° Ciclo",
+  years: [
+    // 2° año
+    { yearId: "y2", yearNombre: "2do año", materias: [
+      { id: "td1", nombre: "Técnicas Digitales I", req: ["rep1"] },
+      { id: "morf2", nombre: "Morfología II", req: ["morf1","matApl","rep1"] },
+      { id: "tpa1", nombre: "TPA1", req: ["tallerIntro"] },
+      { id: "tpa2", nombre: "TPA2", req: ["tpa1"] },
+      { id: "estruc1", nombre: "Estructuras I", req: ["introTec","tecno"] },
+      { id: "cons1", nombre: "Construcciones I", req: ["introTec","tecno"] },
+      { id: "acondAmb", nombre: "Acondicionamiento Ambiental", req: ["tecno"] },
+      { id: "hist1", nombre: "Historia de la Arquitectura I", req: ["cultura"] },
+      { id: "teoria", nombre: "Teoría de la Arquitectura", req: ["cultura"] },
+      { id: "elec1", nombre: "Materia Electiva I", req: [] },
+    ]},
+    // 3° año
+    { yearId: "y3", yearNombre: "3er año", materias: [
+      { id: "td2", nombre: "Técnicas Digitales II", req: ["td1"] },
+      { id: "morf3", nombre: "Morfología III", req: ["morf2"] },
+      { id: "tpa3", nombre: "TPA3", req: ["tpa2"] },
+      { id: "tpa4", nombre: "TPA4", req: ["tpa3"] },
+      { id: "estruc2", nombre: "Estructuras II", req: ["estruc1","cons1"] },
+      { id: "cons2", nombre: "Construcciones II", req: ["cons1","estruc1"] },
+      { id: "cons3", nombre: "Construcciones III", req: ["cons2"] },
+      { id: "disInst1", nombre: "Diseño de instalaciones I", req: ["acondAmb"] },
+      { id: "hist2", nombre: "Historia de la Arquitectura II", req: ["hist1"] },
+      { id: "elec2", nombre: "Materia Electiva II", req: ["elec1"] },
+      { id: "elec3", nombre: "Materia Electiva III", req: ["elec2"] },
+    ]},
+    // 4° año
+    { yearId: "y4", yearNombre: "4to año", materias: [
+      { id: "tpa5", nombre: "TPA5", req: ["tpa4"] },
+      { id: "tpa6", nombre: "TPA6", req: ["tpa5"] },
+      { id: "estruc3", nombre: "Estructuras III", req: ["estruc2","cons2"] },
+      { id: "disInst2", nombre: "Diseño de instalaciones II", req: ["disInst1","estruc2","cons2","hist2"] },
+      { id: "acondArt", nombre: "Acondicionamiento Artificial", req: ["tpa4","cons2","estruc2","disInst1"] },
+      { id: "eco1", nombre: "Economía de la Construcción I", req: ["cons2","estruc2","disInst1","hist2"] },
+      { id: "hist3", nombre: "Historia de la Arquitectura III", req: ["teoria","hist2"] },
+      { id: "urb1", nombre: "Urbanística I", req: ["teoria"] },
+      { id: "elec4", nombre: "Materia Electiva IV", req: ["elec3"] },
+      { id: "elec5", nombre: "Materia Electiva V", req: ["elec4"] },
+    ]},
+  ],
+},
