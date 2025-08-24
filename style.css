@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding:20px; background:#f5f5f5; }
+h1 { text-align:center; }
+.materia { display:inline-block; padding:8px 12px; margin:5px; border-radius:5px; cursor:pointer; }
+.bloqueada { background:#ccc; color:#666; }
+.disponible { background:#6c5ce7; color:white; }
+.aprobada { background:#00b894; color:white; }
